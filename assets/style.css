@@ -1,0 +1,13 @@
+.high-score {
+    font-size: 10px;
+    font-weight: lighter;
+    color: rgb(155, 81, 184);
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.time-count {
+    position: absolute;
+    top: 40px;
+    right: 35px;
+}

@@ -22,153 +22,67 @@
     </header>
 
     <main>
-        <div class="quiz">
-            <!-- Quiz info page -->
-            <div class="quiz-info">
-                <div class="info-title">
-                    <span>Coding Quiz Challenge</span>
+        <!-- Quiz info page -->
+        <div class="quiz-info">
+            <div class="info-title">
+                <span>Coding Quiz Challenge</span>
+            </div>
+            <div class="info-body">
+                <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            </div>
+            <button class="start_btn" type="button">
+                Start Quiz
+            </button>
+        </div>
+
+        <!-- Quiz box 1 -->
+        <div class="container">
+            <div id="game" class="title">
+                <div id="hud">
+                    <div class="hud-item">
+                    <div class="option-list">
+                        <div class="option">
+                            <p id="progressText" class="hud-prefix">
+                                Question
+                            </p>
+                            <div id="progressBar">
+                                <div id="progressBarFull"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="info-body">
-                    <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                <div id="question">What is the answer to this question</div>
+                <div class="choice-container">
+                    <p class="choice-prefix">A</p>
+                    <p class="choice-text" data-number="1">Choice</p>
                 </div>
-                <button class="start_btn" type="button">
-                    Start Quiz
-                </button>
+                <div class="choice-container">
+                    <p class="choice-prefix">B</p>
+                    <p class="choice-text" data-number="2">Choice 2</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">C</p>
+                    <p class="choice-text" data-number="3">Choice 3</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">D</p>
+                    <p class="choice-text" data-number="4">Choice 4</p>
+                </div>
             </div>
+        </div>
 
-            <!-- Quiz box 1 -->
-            <div class="quiz-page1">
-                <header>
-                    <div class="title">Commonly used data types DO Not Include:
-                    </div>
-                </header>
-                <section>
-                    <div class="option-list">
-                        <div class="option">
-                            <span>1. strings</span>
-                        </div>
-                        <div class="option">
-                            <span>2. booleans</span>
-                        </div>
-                        <div class="option">
-                            <span>3. alerts</span>
-                        </div>
-                        <div class="option">
-                            <span>4. numbers</span>
-                        </div>
-                    </div>
-                </section>
-            </div>
+        <!-- final score section -->
+        <div class="container">
+            <header>
+                <div class="title">All done!</div>
+            </header>
+            <p>Your final score is</p>
 
-            <!-- Quiz box 2 -->
-            <div class="quiz-page2">
-                <header>
-                    <div class="title">The condition in an if / else statement is enclosed with _________.
-                    </div>
-                </header>
-                <section>
-                    <div class="option-list">
-                        <div class="option">
-                            <span>1. quotes</span>
-                        </div>
-                        <div class="option">
-                            <span>2. curly brackets</span>
-                        </div>
-                        <div class="option">
-                            <span>3. parenthesis</span>
-                        </div>
-                        <div class="option">
-                            <span>4. square brackets</span>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <!-- Quiz box 3 -->
-            <div class="quiz-page3">
-                <header>
-                    <div class="title">Arrays in JavaScript can be used to store _________.
-                    </div>
-                </header>
-                <section>
-                    <div class="option-list">
-                        <div class="option">
-                            <span>1. numbers and strings</span>
-                        </div>
-                        <div class="option">
-                            <span>2. other arrays</span>
-                        </div>
-                        <div class="option">
-                            <span>3. booleans</span>
-                        </div>
-                        <div class="option">
-                            <span>4. all of the above</span>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <!-- Quiz box 4 -->
-            <div class="quiz-page4">
-                <header>
-                    <div class="title">String values must be enclosed within _______ when being assigned to variables.
-                    </div>
-                </header>
-                <section>
-                    <div class="option-list">
-                        <div class="option">
-                            <span>1. commas</span>
-                        </div>
-                        <div class="option">
-                            <span>2. curly brackets</span>
-                        </div>
-                        <div class="option">
-                            <span>3. quotes</span>
-                        </div>
-                        <div class="option">
-                            <span>4. parenthesis</span>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <!-- Quiz box 5 -->
-            <div class="quiz-page5">
-                <header>
-                    <div class="title">A very useful tool used during development and debugging for printing content to the debugger is:
-                    </div>
-                </header>
-                <section>
-                    <div class="option-list">
-                        <div class="option">
-                            <span>1. JavaScript</span>
-                        </div>
-                        <div class="option">
-                            <span>2. terminal/bash</span>
-                        </div>
-                        <div class="option">
-                            <span>3. for loops</span>
-                        </div>
-                        <div class="option">
-                            <span>4. console.log</span>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <!-- final score section -->
-            <div class="final-score">
-                <header>
-                    <div class="title">All done!</div>
-                </header>
-                <p>Your final score is</p>
-
-                <label for="initials">Enter initials: </label>
-                <input type="text" id="initials" name="initials" class="initials-input" />
-                <button class="submit-btn" type="button">
-                    Submit
-                </button>
-            </div>
+            <label for="initials">Enter initials: </label>
+            <input type="text" id="initials" name="initials" class="initials-input" />
+            <button class="submit-btn" type="button">
+                Submit
+            </button>
         </div>
     </main>
     <script src="assets/script.js"></script>

@@ -4,23 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
+    <title>Quiz Info</title>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
-    <!-- Header with link to high scores and a timer-->
-    <header>
-        <!-- high score section -->
-        <div class="high-score">
-            <h1><a href="high-score.html">View high scores</a></h1>
-        </div>
-        <!-- timer section -->
-        <div class="time-count">
-            <label id="time">Time: </label><label id="minutes">00</label>:<label id="seconds">00</label>
-        </div>
-    </header>
-
     <main>
         <!-- Quiz info page -->
         <div class="quiz-info">
@@ -35,44 +23,8 @@
             </button>
         </div>
 
-        <!-- Quiz box 1 -->
-        <div class="container">
-            <div id="game" class="title">
-                <div id="hud">
-                    <div class="hud-item">
-                    <div class="option-list">
-                        <div class="option">
-                            <p id="progressText" class="hud-prefix">
-                                Question
-                            </p>
-                            <div id="progressBar">
-                                <div id="progressBarFull"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="question">What is the answer to this question</div>
-                <div class="choice-container">
-                    <p class="choice-prefix">A</p>
-                    <p class="choice-text" data-number="1">Choice</p>
-                </div>
-                <div class="choice-container">
-                    <p class="choice-prefix">B</p>
-                    <p class="choice-text" data-number="2">Choice 2</p>
-                </div>
-                <div class="choice-container">
-                    <p class="choice-prefix">C</p>
-                    <p class="choice-text" data-number="3">Choice 3</p>
-                </div>
-                <div class="choice-container">
-                    <p class="choice-prefix">D</p>
-                    <p class="choice-text" data-number="4">Choice 4</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- final score section -->
-        <div class="container">
+        <!-- final score section 
+        <div class="final-score">
             <header>
                 <div class="title">All done!</div>
             </header>
@@ -82,7 +34,7 @@
             <input type="text" id="initials" name="initials" class="initials-input" />
             <button class="submit-btn" type="button">
                 Submit
-            </button>
+            </button> -->
         </div>
     </main>
     <script src="assets/script.js"></script>

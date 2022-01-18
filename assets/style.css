@@ -1,8 +1,12 @@
-body {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.high-score a { 
+/*.high-score a { 
     font-size: 16px;
     font-weight: lighter;
     color: rgb(155, 81, 184);
@@ -15,6 +19,17 @@ body {
     position: absolute;
     top: 40px;
     right: 35px;
+}*/
+
+h1 {
+    font-size: 5.4rem;
+    color: rgb(66, 0, 128);
+    margin-bottom: 5rem;
+}
+
+.container p {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
 }
 
 .container {
@@ -25,9 +40,7 @@ body {
     align-items: center;
     max-width: 80rem;
     margin: 0 auto;
-    text-align: left;
-    border: 3px solid rgb(155, 81, 184);
-    padding: 20px;
+    padding: 2rem;
 }
 
 .flex-column {
@@ -61,10 +74,21 @@ body {
     text-decoration: none;
     color: white;
     background-color: rgb(66, 0, 128);
-    font-size: 20px;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 14px;
+    border-radius: 4px; 
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(188, 74, 241);
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(214, 178, 231);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
 }
 
 .quiz-info,
@@ -96,15 +120,6 @@ body {
     border: none;
     border-radius: 4px;
     padding: 10px 14px;
-}
-
-.start_btn:hover,
-.submit-btn:hover {
-    cursor: pointer;
-    background-color: rgb(188, 74, 241);
-    box-shadow: 0 0.4rem 1.4rem 0 rgb(214, 178, 231);
-    transition: transform 150ms;
-    transform: scale(1.03);
 }
 
 @media screen and (max-width: 768px) {

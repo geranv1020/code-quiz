@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <!-- Page you enter initials to save highscore -->
     <div class="container">
         <div id="end" class="flex-center flex-column">
             <h1 id="finalScore">0</h1>
@@ -15,10 +16,9 @@
                 <h2 id="end-text">Enter initials:</h2>
                 <input type="text" name="name" id="username" placeholder="Enter your initials">
                 <button class="btn" id="saveScoresBtn" type="submit"
-                onclick="saveHighScore(event)" disabled>Save</button>
+                onclick="saveHighScore(event)">Save</button>
             </form>
             <a href="quiz.html" class="btn">Play Again</a>
-            <a href="/" class="btn">Go Home</a>
         </div>
     </div>
     <script src="assets/end.js"></script>

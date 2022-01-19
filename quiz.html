@@ -12,7 +12,7 @@
     <!-- Header with link to high scores and a timer-->
     <header>
         <!-- high score section -->
-        <div class="high-score">
+        <div class="highscorelink">
             <h1><a href="high-score.html">View high scores</a></h1>
         </div>
         <!-- timer section -->
@@ -21,17 +21,17 @@
         </div>
     </header>
     
-    <!-- Quiz box 1 -->
+    <!-- Quiz pages -->
     <div class="container">
         <div id="game" class="justify-center flex-column">
-            <div class="option-list">
-                <div class="option">
-                    <p id="progressText" class="hud-prefix">
-                        Question
+            <div id="hud">
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        Score
                     </p>
-                    <div id="progressBar">
-                        <div id="progressBarFull"></div>
-                    </div>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
                 </div>
             </div>
             <h1 id="question">What is the answer to this question</h1>

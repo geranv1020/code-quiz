@@ -1,3 +1,4 @@
+// timer functions //
 var secondsLabel = document.getElementById("seconds");
 var totalSeconds = 76;
 setInterval(setTime, 1000);
@@ -22,9 +23,11 @@ const scoreText = document.querySelector('#score');
 
 let currentQuestion = {}
 let acceptingAnswers = true
-let availableQuestions = []
 let score = 0
+let questionCounter = 0
+let availableQuestions = []
 
+// quiz questions //
 let questions = [
     {
         question: "Commonly used data types DO Not Include:",
@@ -68,9 +71,11 @@ let questions = [
     }
 ]
 
+// points awarded each correct questions / 5 total questions //
 const SCORE_POINTS = 100
 const MAX_QUESTIONS = 5
 
+// start quiz function //
 startGame = () => {
     questionCounter = 0
     score = 0
@@ -82,11 +87,11 @@ getNewQuestions = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('/high-score.html')
+        return window.location.assign('end.html')
     }
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length)
-    currentQuestion = availibleQuestions[questionIndex]
+    currentQuestion = availableQuestions[questionIndex]
     question.innerText = currentQuestion.question
 
     choices.forEach(choice => {
@@ -94,7 +99,7 @@ getNewQuestions = () => {
         choice.innerText = currentQuestion['choice' + number]
     })
 
-    availableQuestions.splice(questionsIndex, 1)
+    availableQuestions.splice(questionIndex, 1)
 
     acceptingAnswers = true
 }
@@ -110,6 +115,7 @@ choices.forEach(choice => {
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' :
         'incorrect'
 
+        // 100 points if u answer correctly //
         if (classToApply === 'correct') {
             incrementScore(SCORE_POINTS)
         }
@@ -117,8 +123,8 @@ choices.forEach(choice => {
         selectChoice.parentElement.classList.add(classToApply)
 
         setTimeout(() => {
-            selectedChoice.parentElement.classList.remove(classToApply)
-            getNewQuestion()
+            selectChoice.parentElement.classList.remove(classToApply)
+            getNewQuestions()
 
         }, 1000)
 

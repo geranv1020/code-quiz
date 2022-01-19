@@ -6,30 +6,10 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/*.high-score a { 
-    font-size: 16px;
-    font-weight: lighter;
-    color: rgb(155, 81, 184);
-    padding-left: 15px;
-    padding-top: 15px;
-    text-decoration: none;
-}
-
-.time-count {
-    position: absolute;
-    top: 40px;
-    right: 35px;
-}*/
-
 h1 {
     font-size: 5.4rem;
     color: rgb(66, 0, 128);
     margin-bottom: 5rem;
-}
-
-.container p {
-    font-size: 4.2rem;
-    margin-bottom: 4rem;
 }
 
 .container {
@@ -41,6 +21,12 @@ h1 {
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
+}
+
+.container p {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    text-align: center;
 }
 
 .flex-column {
@@ -85,49 +71,6 @@ h1 {
     transform: scale(1.03);
 }
 
-.btn[disabled]:hover {
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
-}
-
-.quiz-info,
-.final-score {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    border: 3px solid rgb(155, 81, 184);
-    padding: 20px;
-}
-
-.info-title {
-    font-size: 40px;
-    font-weight: bolder;
-}
-
-.info-body {
-    font-size: 20px;
-}
-
-.quiz-info button,
-.final-score button {
-    color: white;
-    background-color: rgb(66, 0, 128);
-    font-size: 20px;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 14px;
-}
-
-@media screen and (max-width: 768px) {
-    .choice-container {
-        min-width: 40rem;
-    }
-}
-
 /* End Page CSS */
 
 .end-form-container {
@@ -158,8 +101,9 @@ input::placeholder {
 }
 
 #end-text {
-    font-size: 2.4 rem;
-    color: white;
+    font-size: 4.2rem;
+    margin-bottom: 3rem;
+    color: rgb(66, 0, 128);
     text-align: center;
 }
 
